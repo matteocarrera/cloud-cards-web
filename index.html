@@ -11,70 +11,114 @@
 	<script src="./firebase-config.js"></script>
 </head>
 <body>
-	<p class="display-1">CLOUD CARDS</p>
-
-
-	<table class="card">
-		<tr id="photo">
-			<td colspan="2">
-				<img class="avatar" src="Resources/avatar.png" width="150" height="150" >
-			</td>		
-		</tr>
-		<tr id="name">
-			<td>ФИО</td>
-			<td>Петрова Наталья</td>
-		</tr>
-		<tr id="mobile">
-			<td>ТЕЛЕФОН</td>
-			<td>+7(922)088-52-10</td>
-		</tr>
-		<tr id="mobileSecond">
-			<td>ТЕЛЕФОН (другой)</td>
-			<td></td>
-		</tr>
-		<tr id="email">
-			<td>EMAIL</td>
-			<td>npetrova@gmail.com</td>
-		</tr>
-		<tr id="emailSecond">
-			<td>EMAIL (другой)</td>
-			<td></td>
-		</tr>
-		<tr id="company">
-			<td>КОМПАНИЯ</td>
-			<td>Альфа-Банк</td>
-		</tr>
-		<tr id="jobTitle">
-			<td>ДОЛЖНОСТЬ</td>
-			<td>Аналитик</td>
-		</tr>
-		<tr id="address">
-			<td>АДРЕС</td>
-			<td>ул.Мира, 19</td>
-		</tr>
-		<tr id="addressSecond">
-			<td>АДРЕС (другой)</td>
-			<td></td>
-		</tr>
-		<tr id="website">
-			<td>САЙТ</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="social" colspan="2">
+	<div class="col-md-8">
+        <div class="card mb-3">
+            <div class="card-body">
+            	<div class="d-flex flex-column align-items-center text-center">
+            		<a id="photo" class="avatar" href="#"></a><img class="avatar" src="Resources/avatar.png" width="150" height="150" >
+            	</div>
+			    <div id="name" class="row">
+			        <div class="col-sm-3">
+			            <h6 class="mb-0">ФИО</h6>
+			        </div>
+			        <div class="col-sm-9 text-secondary">
+			            Петрова Наталья
+			        </div>
+			    </div>
+			    <hr>
+			    <div id="mobile" class="row">
+			        <div class="col-sm-3">
+			            <h6 class="mb-0">ТЕЛЕФОН</h6>
+			        </div>
+			        <div class="col-sm-9 text-secondary">
+			            +7(922)088-52-10
+			        </div>
+			    </div>
+			    <hr>
+			    <div id="mobileSecond" class="row">
+			        <div class="col-sm-3">
+			            <h6 class="mb-0">ТЕЛЕФОН (другой)</h6>
+			        </div>
+			        <div class="col-sm-9 text-secondary">
+			        </div>
+			    </div>
+			    <hr>
+			    <div id="email" class="row">
+			        <div class="col-sm-3">
+			            <h6 class="mb-0">EMAIL</h6>
+			        </div>
+			        <div class="col-sm-9 text-secondary">
+			            npetrova@gmail.com
+			        </div>
+			    </div>
+			    <hr>
+			    <div id="emailSecond" class="row">
+			        <div class="col-sm-3">
+			            <h6 class="mb-0">EMAIL (другой)</h6>
+			        </div>
+			        <div class="col-sm-9 text-secondary">
+			        </div>
+			    </div>
+			    <hr>
+			    <div id="company" class="row">
+			        <div class="col-sm-3">
+			            <h6 class="mb-0">КОМПАНИЯ</h6>
+			        </div>
+			        <div class="col-sm-9 text-secondary">
+			            Альфа-Банк
+			        </div>
+			    </div>
+			    <hr>
+			    <div id="jobTitle" class="row">
+			        <div class="col-sm-3">
+			            <h6 class="mb-0">ДОЛЖНОСТЬ</h6>
+			        </div>
+			        <div class="col-sm-9 text-secondary">
+			            Аналитик
+			        </div>
+			    </div>
+			    <hr>
+			    <div id="address" class="row">
+			        <div class="col-sm-3">
+			            <h6 class="mb-0">АДРЕС</h6>
+			        </div>
+			        <div class="col-sm-9 text-secondary">
+			        	ул.Мира, 19
+			        </div>
+			    </div>
+			    <hr>
+			    <div id="addressSecond" class="row">
+			        <div class="col-sm-3">
+			            <h6 class="mb-0">АДРЕС (другой)</h6>
+			        </div>
+			        <div class="col-sm-9 text-secondary">
+			        </div>
+			    </div>
+			    <hr>
+			    <div id="website" class="row">
+			        <div class="col-sm-3">
+			            <h6 class="mb-0">САЙТ</h6>
+			        </div>
+			        <div class="col-sm-9 text-secondary">
+			        </div>
+			    </div>
+			    </div>
+			</div>
+			<div class="appIcons">
 				<a id="vk" href="#"><img class="social" src="Resources/vk.svg"></a>
 				<a id="telegram" href="#"><img class="social" src="Resources/telegram.svg"></a>
 				<a id="facebook" href="#"><img class="social" src="Resources/facebook.svg"></a>
 				<a id="instagram" href="#"><img class="social" src="Resources/instagram.svg"></a>
 				<a id="twitter" href="#"><img class="social" src="Resources/twitter.svg"></a>
-			</td>
-		</tr>
-	</table>
+			</div>
+		</div>
 
-	<p>Хотите обмениваться визитками еще удобнее?<br>
+	<div>
+		<p>Хотите обмениваться визитками еще удобнее?<br>
 		Скачивайте наше приложение!<br>
 		<a id="appstore" href="#"></a><img class="ios" src="Resources/appstore.png" width="150">
 		<a id="android" href="#"></a><img class="android" src="Resources/googleplay.png" width="150"></p>
+	</div>
 
 	<script src="./Entities/UserBoolean.js"></script>
 	<script src="./Entities/User.js"></script>

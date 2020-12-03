@@ -1,7 +1,37 @@
-   body {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+  body{
+    margin-top:20px;
+    color: #1a202c;
+    text-align: left;
+    background-color: #e2e8f0;    
+  }
+  .main-body {
+    padding: 15px;
+  }
+  .card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40em;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+  }
+  .mb-3, .my-3 {
+    margin-bottom: 1rem!important;
   }
   .avatar {
     display: block;
@@ -9,18 +39,10 @@
     margin-right: auto;
     margin-bottom: 10px;
   }
-  .card {
-    display: flex;
-    flex-direction: column;
+  .col-md-8 {
     align-items: center;
-    padding: 48px 0px;
-    width: 400px;
-    border: 1px solid gray;
-    border-radius: 10px;
+    width: 40em;
     margin: auto;
-  }
-  td {
-    padding: 5px 20px;
   }
   p {
     text-align: center;
@@ -28,14 +50,20 @@
   h1 {
     text-align: center;
   }
+  .appIcons {
+    align-items: center;
+    width: 20em;
+    margin: auto;
+  }
   .social {
     height: 40px;
-    padding: 5px 15px;  }
-  .ios {
-    margin-left: 20px;
-    margin-right: 60px;
-    margin-top: 10px;
-  }
-  .android {
-    margin-right: 20px;
-  }
+    padding: 5px 15px;}
+    .ios {
+      margin-left: 20px;
+      margin-right: 60px;
+      margin-top: 10px;
+    }
+    .android {
+      margin-right: 20px;
+      margin-top: 10px;
+    }
