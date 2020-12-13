@@ -1,75 +1,55 @@
-  body{
-    font-size: 16px;
-    margin-top:20px;
+  @import url('https://fonts.googleapis.com/css?family=Manrope&display=swap');
+
+  body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
     color: #1a202c;
-    text-align: left;
-    background-color: #e2e8f0;    
+    background-color: #e2e8f0;
+    margin: 0;
+    padding: 0;   
   }
-  .main-body {
-    padding: 15px;
+  div {
+    margin-top: 100px;
   }
-  .card {
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
-  }
-  .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 40em;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 0 solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-    margin-left: auto;
-    margin-top: 50px;
-    margin-right: auto;
-  }
-  .card-body {
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 1rem;
-  }
-  .avatar {
+  .table-borderless {
+    width: 480px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-  }
-  .col-md-8 {
-    align-items: center;
-    width: 40em;
     margin: auto;
+    box-shadow: 0 1px 15px 0 rgba(0,0,0,.1), 0 1px 10px 0 rgba(0,0,0,.06);
   }
-  p {
-    text-align: center;
-  }
-  h1 {
-    text-align: center;
-  }
-   a:link { 
+  a:link { 
     text-decoration: none;
-   } 
-   a:visited {
+  } 
+  a:visited {
     text-decoration: none; } 
-   a:active {
+  a:active {
     text-decoration: none; }
-   a:hover {
+  a:hover {
     text-decoration: underline;
-   } 
-  .appIcons {
-    align-items: center;
-    width: 20em;
-    margin: auto;
   }
-  .social {
+  .appIcons {
+    position: relative;
+    right: auto;
+    left: auto;
+  }
+  p.app {
+    position: relative;
+    right: auto;
+    left: 80px;
+  }
+  td img.avatar {
+    display: block;
+    margin-right: auto;
+    margin-left: auto
+  }
+  td.row {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  img.social {
+    position: relative;
+    right: auto;
+    left: 80px;
     height: 40px;
     padding: 5px 15px;}
-  .ios {
-      margin-left: 20px;
-      margin-right: 60px;
-      margin-top: 10px;
-  }
-  .android {
-      margin-right: 20px;
-      margin-top: 10px;
-  }
