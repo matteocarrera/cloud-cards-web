@@ -2,20 +2,15 @@
 
   body {
     font-family: 'Manrope', sans-serif;
-    font-size: 14px;
+    font-size: 100%
     color: #1a202c;
     background-color: #e2e8f0;
     margin: 0;
-    padding: 0;   
+    padding: 0; 
   }
-  div {
-    margin-top: 100px;
-  }
-  .table-borderless {
-    width: 480px;
-    display: block;
-    margin: auto;
-    box-shadow: 0 1px 15px 0 rgba(0,0,0,.1), 0 1px 10px 0 rgba(0,0,0,.06);
+  table {
+    margin-left: auto;
+    margin-right: auto;
   }
   a:link { 
     text-decoration: none;
@@ -27,29 +22,34 @@
   a:hover {
     text-decoration: underline;
   }
-  .appIcons {
-    position: relative;
-    right: auto;
-    left: auto;
-  }
-  p.app {
-    position: relative;
-    right: auto;
-    left: 80px;
+  tr {
+    align-self: center;
+    vertical-align: center;
   }
   td img.avatar {
     display: block;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
   }
-  td.row {
+  p.app {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
   }
   img.social {
-    position: relative;
-    right: auto;
-    left: 80px;
-    height: 40px;
-    padding: 5px 15px;}
+    height: 115%;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+  img.social-last {
+    padding-right: 0;
+  }
+  .appIcons {
+    text-align: center;
+  }
+  .text-secondary {
+    text-align: right;
+  }
