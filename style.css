@@ -1,75 +1,55 @@
-  body{
-    font-size: 16px;
-    margin-top:20px;
+  @import url('https://fonts.googleapis.com/css?family=Manrope&display=swap');
+
+  body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 100%
     color: #1a202c;
-    text-align: left;
-    background-color: #e2e8f0;    
+    background-color: #e2e8f0;
+    margin: 0;
+    padding: 0; 
   }
-  .main-body {
-    padding: 15px;
-  }
-  .card {
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
-  }
-  .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 40em;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 0 solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-    margin-left: auto;
-    margin-top: 50px;
-    margin-right: auto;
-  }
-  .card-body {
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 1rem;
-  }
-  .avatar {
-    display: block;
+  table {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
   }
-  .col-md-8 {
-    align-items: center;
-    width: 40em;
-    margin: auto;
-  }
-  p {
-    text-align: center;
-  }
-  h1 {
-    text-align: center;
-  }
-   a:link { 
+  a:link { 
     text-decoration: none;
-   } 
-   a:visited {
+  } 
+  a:visited {
     text-decoration: none; } 
-   a:active {
+  a:active {
     text-decoration: none; }
-   a:hover {
+  a:hover {
     text-decoration: underline;
-   } 
+  }
+  tr {
+    align-self: center;
+    vertical-align: center;
+  }
+  td img.avatar {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+  }
+  p.app {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  img.social {
+    height: 115%;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+  img.social-last {
+    padding-right: 0;
+  }
   .appIcons {
-    align-items: center;
-    width: 20em;
-    margin: auto;
+    text-align: center;
   }
-  .social {
-    height: 40px;
-    padding: 5px 15px;}
-  .ios {
-      margin-left: 20px;
-      margin-right: 60px;
-      margin-top: 10px;
-  }
-  .android {
-      margin-right: 20px;
-      margin-top: 10px;
+  .text-secondary {
+    text-align: right;
   }
