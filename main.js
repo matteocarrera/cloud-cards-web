@@ -72,7 +72,7 @@ function setDataToField(fieldRow, field, data, additionalText) {
 		document.getElementById(fieldRow).classList.add('d-none');
 	} else {
 		if (additionalText != null) {
-			document.getElementById(field).href = link
+			document.getElementById(field).href = additionalText + data
 		}
 		document.getElementById(field).innerHTML = data
 	}
