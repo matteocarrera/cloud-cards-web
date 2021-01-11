@@ -1,2 +1,5 @@
 # File with Firebase keys
 firebase-config.js
+
+# Mac Files
+.DS_Store
