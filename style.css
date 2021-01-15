@@ -1,57 +1,76 @@
-  @import url('https://fonts.googleapis.com/css?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Manrope&display=swap');
 
-  body {
-    font-family: 'Manrope', sans-serif;
-    font-size: 100%
-    color: #1a202c;
-    background-color: #e2e8f0;
-    margin: 0;
-    padding: 0; 
-  }
-  table {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  a:link { 
-    text-decoration: none;
-  } 
-  a:visited {
-    text-decoration: none; } 
-  a:active {
-    text-decoration: none; }
-  a:hover {
-    text-decoration: underline;
-  }
-  tr {
-    align-self: center;
-    vertical-align: center;
-  }
-  td img.avatar {
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 150px;
-    height: 150px;
-    margin-top: 30px;
-  }
-  p.app {
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  img.social {
-    height: 115%;
-    padding-right: 10px;
-    margin-bottom: 20px;
-  }
-  img.social-last {
-    padding-right: 0;
-  }
-  .appIcons {
-    text-align: center;
-  }
-  .text-secondary {
-    text-align: right;
-  }
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 100%
+  color: #1a202c;
+  background-color: #e2e8f0;
+  margin: 0;
+  padding: 0; 
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:link { 
+  text-decoration: none;
+} 
+
+a:visited {
+  text-decoration: none; } 
+
+a:active {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline;
+}
+
+tr {
+  align-self: center;
+  vertical-align: center;
+}
+
+td img.avatar {
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+}
+
+p.app {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img.social {
+  height: 115%;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+img.social-last {
+  padding-right: 0;
+}
+
+.btn-info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #358EBC !important;
+  border-color: #358EBC !important;
+}
+
+.appIcons {
+  text-align: center;
+}
+
+.text-secondary {
+  text-align: right;
+}

@@ -13,15 +13,22 @@
 	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+	<script type="text/javascript" src="vcard.js"></script>
 	<script src="./firebase-config.js"></script>
 </head>
 <body>
-	<div class="">
+	<div>
 		<table class="table-borderless col-xs-12 align-middle" cellpadding="6">
 			<tbody>
 		  		<tr id="photo">
 		    		<td colspan="2">
-		    			<img id="avatar" class="avatar" src="" width="100px">
+		    			<img class="avatar" src="Resources/avatar.png" width="100px">
+		    		</td>
+		  		</tr>
+		  		<tr colspan="2">
+		    		<td colspan="2">
+		    			<div class="d-flex justify-content-center" id="vcard">
+		  				</div>
 		    		</td>
 		  		</tr>
 		  		<tr id="name-row">
