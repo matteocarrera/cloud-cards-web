@@ -103,7 +103,7 @@
             a.textContent = title
             a.classList.add('btn'); 
             a.classList.add('btn-info');
-            a.style.cssText = "color: #fff;"
+            a.style.cssText = "color: #358EBC; width: 100%;"
 
             if(Blob) {
                 var blob = new Blob([this.dump(card)], {"type": "text/vcard"})
