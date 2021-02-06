@@ -61,8 +61,14 @@ img.social-last {
 }
 
 .btn-info {
-  margin-top: 10px;
   margin-bottom: 10px;
+  background-color: #fff !important;
+  border-color: #358EBC !important;
+}
+
+.btn-import {
+  color: white !important;
+  margin-top: 10px;
   background-color: #358EBC !important;
   border-color: #358EBC !important;
 }

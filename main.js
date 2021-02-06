@@ -53,6 +53,10 @@ firestore.collection("users").doc(parentId).collection("data").doc(parentId).get
     console.log("Ошибка при получении документа: ", error);
 });
 
+function importContact() {
+    window.location.href = "cloudcards://" + window.location.hash;
+}
+
 /*
     Генерация VCard пользователя
 */
