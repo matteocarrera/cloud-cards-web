@@ -30,6 +30,10 @@ firestore.collection("users").doc(parentId).collection("data").doc(parentId).get
                 var currentUser = getUserFromTemplate(ownerUser, userBoolean);
                 generateVCard(currentUser);
                 fillTable(currentUser);
+
+                if(/iPhone/i.test(navigator.userAgent)) {
+                    document.getElementById('import-contact-row').classList.remove("d-none");
+                }
             } else {
                 console.log("Визитки по данному адресу не существует!");
             }

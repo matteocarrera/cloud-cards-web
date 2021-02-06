@@ -14,15 +14,11 @@ table {
   margin-right: auto;
 }
 
-a:link { 
+a:link,
+a:visited,
+a:active { 
   text-decoration: none;
 } 
-
-a:visited {
-  text-decoration: none; } 
-
-a:active {
-  text-decoration: none; }
 
 a:hover {
   text-decoration: underline;
