@@ -24,8 +24,19 @@ firestore.collection("users").doc(parentId).collection("data").doc(parentId).get
         */
         firestore.collection("users").doc(parentId).collection("cards").doc(uuid).get().then(function(doc) {
             if (doc.exists) {
-                var userBooleanJson = JSON.stringify(doc.data()); 
-                var userBoolean = new UserBoolean(JSON.parse(userBooleanJson));
+            	var type = doc.data()["type"];
+                var userBooleanJson = null;
+                var userBoolean = null;
+                switch (type) {
+                    case 'personal':
+                        userBooleanJson = JSON.stringify(doc.data()["data"]); 
+                        userBoolean = new UserBoolean(JSON.parse(userBooleanJson));
+                        break;
+                    case undefined:
+                        userBooleanJson = JSON.stringify(doc.data()); 
+                        userBoolean = new UserBoolean(JSON.parse(userBooleanJson));
+                        break;
+                }
 
                 var currentUser = getUserFromTemplate(ownerUser, userBoolean);
                 generateVCard(currentUser);
