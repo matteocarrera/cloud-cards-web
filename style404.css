@@ -8,11 +8,11 @@
 
 body {
   background: #358EBC;
-    color:#fff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    max-height:700px;
-    overflow: hidden;
+  color:#fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  max-height:700px;
+  overflow: hidden;
 }
 
 .container {
@@ -168,10 +168,12 @@ p {
     0% {margin-left: 1000px;}
     100% {margin-left: -1000px;}
 }
+
 @-moz-keyframes moveclouds {
     0% {margin-left: 1000px;}
     100% {margin-left: -1000px;}
 }
+
 @-o-keyframes moveclouds {
     0% {margin-left: 1000px;}
     100% {margin-left: -1000px;}

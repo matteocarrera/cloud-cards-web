@@ -10,18 +10,20 @@ body {
   padding: 0;
 }
 
+h4 {
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+
+h5 {
+	margin-top: 1.2em;
+}
+
 .container {
 	padding-top: 20px;
-}
-
-img {
-	width: 150px;
-}
-
-
-.bottom {
 	margin-bottom: 20px;
 }
+
 .app {
 	text-align: center;
 	font-size: 1.2em;
@@ -35,6 +37,53 @@ img {
 	text-align: center;
 }
 
-h5 {
-	margin-top: 1.2em;
+/* xs */
+img {
+    width: 100px;
+    height: auto;
+}
+/* sm */
+@media (min-width: 768px) {
+    img {
+        width: 150px;
+    }
+
+    .rounded-circle {
+        width: 100px;
+    }
+
+    h4 {
+    	font-size: 1.3em;
+    	margin-top: 10px;
+    }
+}
+/* md */
+@media (min-width: 992px) {
+    img {
+        width: 200px;
+    }
+
+    .rounded-circle {
+        width: 125px;
+    }
+
+     h4 {
+    	font-size: 1.5em;
+    	margin-top: 15px;
+    }
+}
+/* lg */
+@media (min-width: 1200px) {
+    img {
+        width: 250px;
+    }
+
+    .rounded-circle {
+        width: 150px;
+    }
+
+     h4 {
+    	font-size: 1.8em;
+    	margin-top: 15px;
+    }
 }
