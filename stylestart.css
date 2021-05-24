@@ -32,16 +32,8 @@ p {
 	margin-bottom: 20px;
 }
 
-.rounded-circle {
-	width: 100px;
-}
-
 .btn {
 	background-color: #358ebc;
 	border-radius: 20px;
 	width: 200px;
-}
-
-.rounded-circle {
-	width: 50px;
 }

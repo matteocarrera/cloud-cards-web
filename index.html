@@ -17,12 +17,11 @@
 	<script src="./firebase-config.js"></script>
 </head>
 <body>
-	<div>
-		<table class="table-borderless col-xs-12 align-middle" cellpadding="6">
+	<table class="table-borderless col-xs-12 mx-2 mx-md-auto" cellpadding="6">
 			<tbody>
 		  		<tr id="photo">
 		    		<td colspan="2">
-		    			<img class="avatar" src="Resources/avatar.png" width="100px">
+		    			<img class="avatar" src="Resources/logo.svg" width="100px">
 		    		</td>
 		  		</tr>
 		  		<tr colspan="2" id="import-contact-row" class="d-none">
@@ -38,65 +37,77 @@
 		  				</div>
 		    		</td>
 		  		</tr>
-		  		<tr id="name-row">
-		    		<td>ФИО</td>
-		    		<td id="name" class="text-secondary"></td>
+		  		<tr id="name-row" class="d-none">
+		    		<td class="text-secondary">ФИО</td>
+		    		<td id="name"></td>
 		  		</tr>
-		  		<tr id="mobile-row">
-		    		<td>ТЕЛЕФОН</td>
-		    		<td class="text-secondary">
-		    			<a id="mobile" class="text-secondary" href=""></a>
+		  		<tr id="company-name-row" class="d-none">
+		    		<td class="text-secondary">НАИМЕНОВАНИЕ</td>
+		    		<td id="company-name"></td>
+		  		</tr>
+		  		<tr id="company-responsible-row" class="d-none">
+		    		<td class="text-secondary">ОТВЕТСТВЕННОЕ ЛИЦО</td>
+		    		<td id="company-responsible"></td>
+		  		</tr>
+		  		<tr id="company-responsible-job-title-row" class="d-none">
+		    		<td class="text-secondary">ДОЛЖНОСТЬ ОТВЕТСТВЕННОГО ЛИЦА</td>
+		    		<td id="company-responsible-job-title" href=""></td>
+		  		</tr>
+		  		<tr id="mobile-row" class="d-none">
+		    		<td class="text-secondary">ТЕЛЕФОН</td>
+		    		<td>
+		    			<a id="mobile" href=""></a>
 		    		</td>
 		  		</tr>
-		  		<tr id="mobileSecond-row">
-		    		<td>ТЕЛЕФОН (другой)</td>
-		    		<td class="text-secondary">
-		    			<a id="mobileSecond" class="text-secondary" href=""></a>
+		  		<tr id="mobileSecond-row" class="d-none">
+		    		<td class="text-secondary">ТЕЛЕФОН (другой)</td>
+		    		<td>
+		    			<a id="mobileSecond" href=""></a>
 		    		</td>
 		  		</tr>
-		  		<tr id="email-row">
-		    		<td>EMAIL</td>
-		    		<td class="text-secondary">
-		    			<a id="email" class="text-secondary" href=""></a>
+		  		<tr id="email-row" class="d-none">
+		    		<td class="text-secondary">EMAIL</td>
+		    		<td>
+		    			<a id="email" href=""></a>
 		    		</td>
 		  		</tr>
-		  		<tr id="emailSecond-row">
-		    		<td>EMAIL (другой)</td>
-		    		<td class="text-secondary">
-		    			<a id="emailSecond" class="text-secondary" href=""></a>
+		  		<tr id="emailSecond-row" class="d-none">
+		    		<td class="text-secondary">EMAIL (другой)</td>
+		    		<td>
+		    			<a id="emailSecond" href=""></a>
 		    		</td>
 		  		</tr>
-		  		<tr id="company-row">
-		    		<td>КОМПАНИЯ</td>
-		    		<td id="company" class="text-secondary"></td>
+		  		<tr id="company-row" class="d-none">
+		    		<td class="text-secondary">КОМПАНИЯ</td>
+		    		<td id="company"></td>
 		  		</tr>
-		  		<tr id="jobTitle-row">
-		    		<td>ДОЛЖНОСТЬ</td>
-		    		<td id="jobTitle" class="text-secondary"></td>
+		  		<tr id="jobTitle-row" class="d-none">
+		    		<td class="text-secondary">ДОЛЖНОСТЬ</td>
+		    		<td id="jobTitle"></td>
 		  		</tr>
-		  		<tr id="address-row">
-		    		<td>АДРЕС</td>
-		    		<td class="text-secondary">
-		    			<a href="" id="address" class="text-secondary"></a>
+		  		<tr id="address-row" class="d-none">
+		    		<td class="text-secondary">АДРЕС</td>
+		    		<td>
+		    			<a href="" id="address"></a>
 		    		</td>
 		  		</tr>
-		  		<tr id="addressSecond-row">
-		    		<td>АДРЕС (другой)</td>
-		    		<td class="text-secondary">
-		    			<a id="addressSecond" class="text-secondary" href=""></a>
+		  		<tr id="addressSecond-row" class="d-none">
+		    		<td class="text-secondary">АДРЕС (другой)</td>
+		    		<td>
+		    			<a id="addressSecond" href=""></a>
 		    		</td>
 		  		</tr>
-		  		<tr id="site-row">
-		    		<td>САЙТ</td>
-		    		<td class="text-secondary"><a id="site" href=""></a></td>
+		  		<tr id="site-row" class="d-none">
+		    		<td class="text-secondary">САЙТ</td>
+		    		<td><a id="site" href=""></a></td>
 		  		</tr>
 		  		<tr>
 		  			<td class="appIcons" colspan="2">
-		  				<a id="vk" href="#"><img class="social" src="Resources/vk.svg"></a>
-						<a id="telegram" href="#"><img class="social" src="Resources/telegram.svg"></a>
-						<a id="facebook" href="#"><img class="social" src="Resources/facebook.svg"></a>
-						<a id="instagram" href="#"><img class="social" src="Resources/instagram.svg"></a>
-						<a id="twitter" href="#"><img class="social social-last" src="Resources/twitter.svg"></a>
+		  				<a id="vk" class="d-none" href="#"><img class="social" src="Resources/vk.svg"></a>
+						<a id="telegram" class="d-none" href="#"><img class="social" src="Resources/telegram.svg"></a>
+						<a id="facebook" class="d-none" href="#"><img class="social" src="Resources/facebook.svg"></a>
+						<a id="instagram" class="d-none" href="#"><img class="social" src="Resources/instagram.svg"></a>
+						<a id="twitter" class="d-none" href="#"><img class="social social-last" src="Resources/twitter.svg"></a>
 		  			</td>
 		  		</tr>
 		  		<tr>
@@ -105,20 +116,20 @@
 		    				Хотите обмениваться визитками еще удобнее?<br>
 							Скачивайте наше приложение!<br><br>
 							<a id="appstore" href="https://testflight.apple.com/join/lcBRVhZe">
-								<img class="ios" src="Resources/appstore.png" width="150">
+								<img class="ios btn-market px-4 py-2" src="Resources/appstore.png" width="150">
 							</a>
 							<a id="android" href="https://play.google.com/store">
-								<img class="android" src="Resources/googleplay.png" width="150">
+								<img class="android btn-market px-4 py-2" src="Resources/googleplay.png" width="150">
 							</a>
 						</p>
 		    		</td>
 		  		</tr>
 	  		</tbody>
 		</table>
-	</div>
 
 	<script src="./Entities/UserBoolean.js"></script>
 	<script src="./Entities/User.js"></script>
+	<script src="./Entities/Company.js"></script>
 	<script src="./Utils/UserParser.js"></script>
 	<script src="./main.js"></script>
 </body>

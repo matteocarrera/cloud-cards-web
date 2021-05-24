@@ -12,11 +12,13 @@ body {
 table {
   margin-left: auto;
   margin-right: auto;
+  max-width: 500px;
 }
 
 a:link,
 a:visited,
 a:active { 
+  color: #358ebc;
   text-decoration: none;
 } 
 
@@ -69,10 +71,19 @@ img.social-last {
   border-color: #358EBC !important;
 }
 
+.btn-market {
+  background-color: #358ebc;
+  border-radius: 20px;
+}
+
 .appIcons {
   text-align: center;
 }
 
 .text-secondary {
+  text-align: left;
+}
+
+td:nth-child(2) {
   text-align: right;
 }
