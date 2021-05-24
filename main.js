@@ -81,10 +81,12 @@ firestore
                 }
 
             } else {
+                setNotFoundPage()
                 console.log("Визитки по данному адресу не существует!");
             }
 
         }).catch(function(error) {
+            setNotFoundPage()
             console.log("Ошибка при получении документа: ", error);
         });
 
@@ -102,10 +104,12 @@ firestore
 		}
 
     } else {
+        setNotFoundPage()
         console.log("Пользователя по данному адресу не существует!");
     }
 
 }).catch(function(error) {
+    setNotFoundPage()
     console.log("Ошибка при получении документа: ", error);
 });
 
@@ -213,6 +217,11 @@ function setSocialToVCard(user, social, key, userData) {
     if (userData != "") {
         user.add(vCard.Entry.URL, social + userData, key);
     }
+}
+
+function setNotFoundPage() {
+    window.location.hash = ""
+    window.location.href = window.location.toString().replace("#", "notfound.html")
 }
 
 /*
