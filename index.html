@@ -17,115 +17,167 @@
 	<script src="./firebase-config.js"></script>
 </head>
 <body>
-	<table class="table-borderless col-xs-12 mx-2 mx-md-auto" cellpadding="6">
-			<tbody>
-		  		<tr id="photo">
-		    		<td colspan="2">
-		    			<img class="avatar" src="Resources/logo.svg" width="100px">
-		    		</td>
-		  		</tr>
-		  		<tr colspan="2" id="import-contact-row" class="d-none">
-		    		<td colspan="2">
-		    			<div class="d-flex justify-content-center btn btn-import" onclick="importContact()">
-		    				Импортировать в CloudCards
-		  				</div>
-		    		</td>
-		  		</tr>
-		  		<tr colspan="2">
-		    		<td colspan="2">
-		    			<div class="d-flex justify-content-center" id="vcard">
-		  				</div>
-		    		</td>
-		  		</tr>
-		  		<tr id="name-row" class="d-none">
-		    		<td class="text-secondary">ФИО</td>
-		    		<td id="name"></td>
-		  		</tr>
-		  		<tr id="company-name-row" class="d-none">
-		    		<td class="text-secondary">НАИМЕНОВАНИЕ</td>
-		    		<td id="company-name"></td>
-		  		</tr>
-		  		<tr id="company-responsible-row" class="d-none">
-		    		<td class="text-secondary">ОТВЕТСТВЕННОЕ ЛИЦО</td>
-		    		<td id="company-responsible"></td>
-		  		</tr>
-		  		<tr id="company-responsible-job-title-row" class="d-none">
-		    		<td class="text-secondary">ДОЛЖНОСТЬ ОТВЕТСТВЕННОГО ЛИЦА</td>
-		    		<td id="company-responsible-job-title" href=""></td>
-		  		</tr>
-		  		<tr id="mobile-row" class="d-none">
-		    		<td class="text-secondary">ТЕЛЕФОН</td>
-		    		<td>
-		    			<a id="mobile" href=""></a>
-		    		</td>
-		  		</tr>
-		  		<tr id="mobileSecond-row" class="d-none">
-		    		<td class="text-secondary">ТЕЛЕФОН (другой)</td>
-		    		<td>
-		    			<a id="mobileSecond" href=""></a>
-		    		</td>
-		  		</tr>
-		  		<tr id="email-row" class="d-none">
-		    		<td class="text-secondary">EMAIL</td>
-		    		<td>
-		    			<a id="email" href=""></a>
-		    		</td>
-		  		</tr>
-		  		<tr id="emailSecond-row" class="d-none">
-		    		<td class="text-secondary">EMAIL (другой)</td>
-		    		<td>
-		    			<a id="emailSecond" href=""></a>
-		    		</td>
-		  		</tr>
-		  		<tr id="company-row" class="d-none">
-		    		<td class="text-secondary">КОМПАНИЯ</td>
-		    		<td id="company"></td>
-		  		</tr>
-		  		<tr id="jobTitle-row" class="d-none">
-		    		<td class="text-secondary">ДОЛЖНОСТЬ</td>
-		    		<td id="jobTitle"></td>
-		  		</tr>
-		  		<tr id="address-row" class="d-none">
-		    		<td class="text-secondary">АДРЕС</td>
-		    		<td>
-		    			<a href="" id="address"></a>
-		    		</td>
-		  		</tr>
-		  		<tr id="addressSecond-row" class="d-none">
-		    		<td class="text-secondary">АДРЕС (другой)</td>
-		    		<td>
-		    			<a id="addressSecond" href=""></a>
-		    		</td>
-		  		</tr>
-		  		<tr id="site-row" class="d-none">
-		    		<td class="text-secondary">САЙТ</td>
-		    		<td><a id="site" href=""></a></td>
-		  		</tr>
-		  		<tr>
-		  			<td class="appIcons" colspan="2">
-		  				<a id="vk" class="d-none" href="#"><img class="social" src="Resources/vk.svg"></a>
-						<a id="telegram" class="d-none" href="#"><img class="social" src="Resources/telegram.svg"></a>
-						<a id="facebook" class="d-none" href="#"><img class="social" src="Resources/facebook.svg"></a>
-						<a id="instagram" class="d-none" href="#"><img class="social" src="Resources/instagram.svg"></a>
-						<a id="twitter" class="d-none" href="#"><img class="social social-last" src="Resources/twitter.svg"></a>
-		  			</td>
-		  		</tr>
-		  		<tr>
-		    		<td id="download" colspan="2">
-		    			<p class="app">
-		    				Хотите обмениваться визитками еще удобнее?<br>
-							Скачивайте наше приложение!<br><br>
-							<a id="appstore" href="https://testflight.apple.com/join/lcBRVhZe">
-								<img class="ios btn-market px-4 py-2" src="Resources/appstore.png" width="150">
-							</a>
-							<a id="android" href="https://play.google.com/store">
-								<img class="android btn-market px-4 py-2" src="Resources/googleplay.png" width="150">
-							</a>
-						</p>
-		    		</td>
-		  		</tr>
-	  		</tbody>
-		</table>
+	<div class="container my-3 my-md-5">	
+		<div class="row mb-2 align-items-center">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-4">
+				<img class="avatar rounded-circle mx-auto d-block" src="Resources/logo.svg">
+			</div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center" id="import-contact-row">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-4">
+				<div class="d-flex justify-content-center btn btn-import" onclick="importContact()">
+					Импортировать в CloudCards
+				</div>
+			</div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-4">
+				<div class="d-flex justify-content-center" id="vcard"></div>
+			</div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center d-none" id="name-row">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-2 text-secondary">фио</div>
+			<div class="col-xs-12 col-md-2 text-xs-left text-md-right" id="name"></div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center d-none" id="company-name-row">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-2 text-secondary">наименование</div>
+			<div class="col-xs-12 col-md-2 text-xs-left text-md-right" id="company-name"></div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center d-none" id="company-responsible-row">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-2 text-secondary">ответственное лицо</div>
+			<div class="col-xs-12 col-md-2 text-xs-left text-md-right" id="company-responsible"></div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center d-none" id="company-responsible-job-title-row">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-2 text-secondary">должность ответственного лица</div>
+			<div class="col-xs-12 col-md-2 text-xs-left text-md-right" id="company-responsible-job-title"></div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center d-none" id="mobile-row">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-2 text-secondary">телефон</div>
+			<div class="col-xs-12 col-md-2 text-xs-left text-md-right">
+				<a id="mobile" href=""></a>
+			</div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center d-none" id="mobile-second-row">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-2 text-secondary">телефон (другой)</div>
+			<div class="col-xs-12 col-md-2 text-xs-left text-md-right">
+				<a id="mobile-second" href=""></a>
+			</div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center d-none" id="email-row">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-2 text-secondary">электронная почта</div>
+			<div class="col-xs-12 col-md-2 text-xs-left text-md-right">
+				<a id="email" href=""></a>
+			</div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center d-none" id="email-second-row">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-2 text-secondary">электронная почта (другая)</div>
+			<div class="col-xs-12 col-md-2 text-xs-left text-md-right">
+				<a id="email-second" href=""></a>
+			</div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center d-none" id="company-row">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-2 text-secondary">компания</div>
+			<div class="col-xs-12 col-md-2 text-xs-left text-md-right" id="company"></div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center d-none" id="job-title-row">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-2 text-secondary">должность</div>
+			<div class="col-xs-12 col-md-2 text-xs-left text-md-right" id="job-title"></div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center d-none" id="address-row">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-2 text-secondary">адрес</div>
+			<div class="col-xs-12 col-md-2 text-xs-left text-md-right">
+				<a id="address" href="" target="_blank"></a>
+			</div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center d-none" id="address-second-row">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-2 text-secondary">адрес (другой)</div>
+			<div class="col-xs-12 col-md-2 text-xs-left text-md-right">
+				<a id="address-second" href="" target="_blank"></a>
+			</div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center d-none" id="site-row">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-2 text-secondary">сайт</div>
+			<div class="col-xs-12 col-md-2 text-xs-left text-md-right">
+				<a id="site" href=""></a>
+			</div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row my-4 align-items-center">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-4 text-center">
+				<a id="vk" class="d-none" href="#" target="_blank"><img class="social mx-1" width="13%" src="Resources/vk.svg"></a>
+				<a id="telegram" class="d-none" href="#" target="_blank"><img class="social mx-1" width="13%" src="Resources/telegram.svg"></a>
+				<a id="facebook" class="d-none" href="#" target="_blank"><img class="social mx-1" width="13%" src="Resources/facebook.svg"></a>
+				<a id="instagram" class="d-none" href="#" target="_blank"><img class="social mx-1" width="13%" src="Resources/instagram.svg"></a>
+				<a id="twitter" class="d-none" href="#" target="_blank"><img class="social mx-1" width="13%" src="Resources/twitter.svg"></a>
+			</div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+
+		<div class="row mb-2 align-items-center">
+			<div class="hidden-xs col-md-4"></div>
+			<div class="col-xs-12 col-md-4">
+				<p class="app">
+					Хотите такую же визитку?<br>
+					Скачивайте наше приложение!<br><br>
+					<a id="appstore" href="https://testflight.apple.com/join/lcBRVhZe" target="_blank">
+						<img class="ios btn-market px-4 py-2 my-1" src="Resources/appstore.png" width="150" height="45">
+					</a>
+					<a id="android" href="https://play.google.com/store" target="_blank">
+						<img class="android btn-market px-4 py-2 my-1" src="Resources/googleplay.png" width="150" height="45">
+					</a>
+				</p>
+			</div>
+			<div class="hidden-xs col-md-4"></div>
+		</div>
+	</div>	
 
 	<script src="./Entities/UserBoolean.js"></script>
 	<script src="./Entities/User.js"></script>

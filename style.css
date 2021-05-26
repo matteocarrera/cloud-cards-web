@@ -9,12 +9,6 @@ body {
   padding: 0; 
 }
 
-table {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 500px;
-}
-
 a:link,
 a:visited,
 a:active { 
@@ -26,36 +20,16 @@ a:hover {
   text-decoration: underline;
 }
 
-tr {
-  align-self: center;
-  vertical-align: center;
-}
-
-td img.avatar {
+.avatar {
   object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
   width: 150px;
   height: 150px;
-  margin-top: 30px;
 }
 
 p.app {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-}
-
-img.social {
-  height: 115%;
-  padding-right: 10px;
-  margin-bottom: 20px;
-}
-
-img.social-last {
-  padding-right: 0;
 }
 
 .btn-info {
@@ -74,16 +48,4 @@ img.social-last {
 .btn-market {
   background-color: #358ebc;
   border-radius: 20px;
-}
-
-.appIcons {
-  text-align: center;
-}
-
-.text-secondary {
-  text-align: left;
-}
-
-td:nth-child(2) {
-  text-align: right;
 }
