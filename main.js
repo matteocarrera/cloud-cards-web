@@ -140,7 +140,6 @@ function generateVCard(currentUser) {
     setSocialToVCard(user, "https://instagram.com/", "Instagram", currentUser.instagram);
     setSocialToVCard(user, "https://twitter.com/", "Twitter", currentUser.twitter);
     user.add(vCard.Entry.URL, currentUser.website);
-    user.add(vCard.Entry.NOTE, currentUser.notes);
 
     var link = vCard.export(user, "Скачать VCard контакта", currentUser.name + " " + currentUser.surname, false);
     document.getElementById("vcard").appendChild(link);
@@ -153,13 +152,13 @@ function generateVCard(currentUser) {
 function fillTableWithPersonalData(currentUser) {
     setDataToField('name-row', 'name', currentUser.surname + ' ' + currentUser.name + ' ' + currentUser.patronymic, null);
     setDataToField('mobile-row', 'mobile', currentUser.mobile, 'tel:');
-    setDataToField('mobileSecond-row', 'mobileSecond', currentUser.mobileSecond, 'tel:');
+    setDataToField('mobile-second-row', 'mobile-second', currentUser.mobileSecond, 'tel:');
     setDataToField('email-row', 'email', currentUser.email, 'mailto:');
-    setDataToField('emailSecond-row', 'emailSecond', currentUser.emailSecond, 'mailto:');
+    setDataToField('email-second-row', 'email-second', currentUser.emailSecond, 'mailto:');
     setDataToField('company-row', 'company', currentUser.company, null);
-    setDataToField('jobTitle-row', 'jobTitle', currentUser.jobTitle, null);
+    setDataToField('job-title-row', 'job-title', currentUser.jobTitle, null);
     setDataToField('address-row', 'address', currentUser.address, 'http://maps.google.com/?q=');
-    setDataToField('addressSecond-row', 'addressSecond', currentUser.addressSecond, 'http://maps.google.com/?q=');
+    setDataToField('address-second-row', 'address-second', currentUser.addressSecond, 'http://maps.google.com/?q=');
     setDataToField('site-row', 'site', currentUser.website, '');
 
     setLinkToSocial('vk', 'https://vk.com/', currentUser.vk);
@@ -203,7 +202,7 @@ function setDataToField(fieldRow, field, data, additionalText) {
 */
 
 function setLinkToSocial(socialId, socialAddress, userData) {
-	if (userData == '') {
+	if (userData != '') {
 		document.getElementById(socialId).classList.remove('d-none');
 		document.getElementById(socialId).href = socialAddress + userData;
 	}

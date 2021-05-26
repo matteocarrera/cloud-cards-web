@@ -12,15 +12,12 @@ class UserBoolean {
 	emailSecond = false
 	address = false
 	addressSecond = false
-	cardNumber = false
-	cardNumberSecond = false
 	website = false
 	vk = false
 	telegram = false
 	facebook = false
 	instagram = false
 	twitter = false
-	notes = false
 
 	constructor(data) {
     	Object.assign(this, data);
